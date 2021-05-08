@@ -1,8 +1,7 @@
 import os.path
 from flask import Flask, send_from_directory, render_template
 
-app = Flask(__name__, static_url_path='assets',
-            template_folder='pages')
+app = Flask(__name__, static_url_path='assets',)
 
 @app.route('/')
 def index():
